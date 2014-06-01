@@ -1,9 +1,9 @@
-require_relative '../../lib/pig_latin/translator.rb'
+require_relative '../../lib/pig_latin'
 
-describe PigLatin::Translator do
+describe PigLatin::WordTranslator do
 
   def translate(phrase)
-    PigLatin::Translator.new.translate(phrase)
+    PigLatin::WordTranslator.new(phrase).translate
   end
 
   it "translates words beginning with a" do
@@ -30,7 +30,7 @@ describe PigLatin::Translator do
     translate("queen").should == "eenquay"
   end
 
-  it "translates words beginning with  consonant before qu" do
+  it "translates words beginning with consonant before qu" do
     translate("square").should == "aresquay"
   end
 
@@ -44,10 +44,6 @@ describe PigLatin::Translator do
 
   it "translates words beginning with sch" do
     translate("school").should == "oolschay"
-  end
-
-  it "translates phrase" do
-    translate("quick fast run").should == "ickquay astfay unray"
   end
 
   it "translates words beginning with ye" do
@@ -67,3 +63,4 @@ describe PigLatin::Translator do
   end
 
 end
+
