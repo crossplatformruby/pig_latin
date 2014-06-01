@@ -1,8 +1,14 @@
 # PigLatin
 
-TODO: Write a gem description
+Simple translator from English to Pig Latin.
+
+Simple (and a bit silly) example of a Cross Platform Ruby Gem
+i.e Gem that can be used without modifications in MRI, RubyMotion and Opal.rb.
 
 ## Installation
+
+Regardless if you are writing MRI console app, Rails app that uses Opal.rb
+or iOS Application in RubyMotion.
 
 Add this line to your application's Gemfile:
 
@@ -16,9 +22,11 @@ Or install it yourself as:
 
     $ gem install pig_latin
 
+
 ## Usage
 
-TODO: Write usage instructions here
+PigLatin.translate("foo bar baz")
+> "oofay arbay azbay"
 
 ## Contributing
 

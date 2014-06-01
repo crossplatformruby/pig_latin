@@ -13,7 +13,7 @@ module PigLatin
     private
 
     def word_after_consonants
-      word.sub(/\A#{beginning_consonants}/, "")
+      word.sub(beginning_consonants, "")
     end
 
     def beginning_consonants
@@ -21,10 +21,10 @@ module PigLatin
     end
 
     def find_beginning_consonants
-      if word =~ /\A(xr|yt)/
+      if word =~ /^(xr|yt)/
         ""
       else
-        word.slice(/\A(qu|[^aeiou])*/) || ""
+        word.sub(/^((qu|[^aeiou])*)(.*)$/, '\1') || ""
       end
     end
 
