@@ -2,25 +2,23 @@
 
 Simple translator from English to Pig Latin.
 
-Simple (and a bit silly) example of a Cross Platform Ruby Gem
+Simple (although a bit silly) example of a Cross Platform Ruby Gem
 i.e Gem that can be used without modifications in MRI, RubyMotion and Opal.rb.
+
+More info at [crossplatformruby.com](http://crossplatformruby.com)
 
 ## Installation
 
-Regardless if you are writing MRI console app, Rails app that uses Opal.rb
+Regardless of whether you are writing MRI console app, Rails app that uses Opal.rb
 or iOS Application in RubyMotion.
 
 Add this line to your application's Gemfile:
 
-    gem 'pig_latin'
+    gem 'pig_latin', git: "git@github.com:crossplatformruby/pig_latin.git"
 
 And then execute:
 
     $ bundle
-
-Or install it yourself as:
-
-    $ gem install pig_latin
 
 
 ## Usage
@@ -30,8 +28,33 @@ PigLatin.translate("foo bar baz")
 
 ## Contributing
 
-1. Fork it ( http://github.com/<my-github-username>/pig_latin/fork )
+1. Fork it ( http://github.com/crossplatformruby/pig_latin/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create new Pull Request
+
+## License
+
+Copyright (c) 2014 Creative Mind Michał Taszycki
+
+MIT License
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+"Software"), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
